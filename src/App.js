@@ -1,22 +1,15 @@
-function getMajor() {
-  return "Full-stack";
-}
-
-const companyName = "DumbWays.ID";
-
-function penjumlahan() {
-  let x = 5;
-  let y = 9;
-  return x + y - x * x;
+function greetings(name) {
+  return alert(name);
 }
 
 export default function App() {
   return (
     <>
-      <p>
-        Welcome to {companyName} Class {getMajor()}
-      </p>
-      <p>{penjumlahan()}</p>
+      <h1>Lu kalo mencet tombol ini, websitenya bakalan kasih alert</h1>
+      <button onClick={() => alert("Pagi lur!")}>Klik disini</button>
+
+      <h1>Lu kalo mencet tombol ini, websitenya bakalan kasih alert</h1>
+      <button onClick={() => greetings("Roronoa Zoro")}>Klik disini</button>
     </>
   );
 }
