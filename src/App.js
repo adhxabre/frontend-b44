@@ -1,15 +1,29 @@
-function greetings(name) {
-  return alert(name);
-}
-
 export default function App() {
   return (
     <>
-      <h1>Lu kalo mencet tombol ini, websitenya bakalan kasih alert</h1>
-      <button onClick={() => alert("Pagi lur!")}>Klik disini</button>
+      <h1>Ini list bro!</h1>
 
-      <h1>Lu kalo mencet tombol ini, websitenya bakalan kasih alert</h1>
-      <button onClick={() => greetings("Roronoa Zoro")}>Klik disini</button>
+      <Props ListData="BMW" ListName="C80" />
+      <Props ListData="Lemberjember" ListName="Galardo" />
+      <Props ListData="Toyota" ListName="Avanza Hitam" />
+      <Props ListData="Ferdi" ListName="Sambo" />
+      <Props
+        ListData="Puan"
+        ListName="Maharani"
+        JualPulau={true}
+        BerapaPulau={34}
+      />
+    </>
+  );
+}
+
+function Props(props) {
+  return (
+    <>
+      <h1>{props.ListData}</h1>
+      <h2>{props.ListName}</h2>
+      <h3>{props.JualPulau}</h3>
+      <h4>{props.BerapaPulau}</h4>
     </>
   );
 }
