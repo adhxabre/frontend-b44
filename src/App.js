@@ -1,39 +1,28 @@
-const styles = {
-  form: {
-    margin: "16px 20% 0",
-  },
-  formGroup: {
-    marginBottom: "16px",
-  },
-  formLabel: {
-    marginBottom: "8px",
-    display: "inline-block",
-  },
-  formInput: {
-    display: "block",
-    width: "100%",
-    padding: ".375rem .75rem",
-    fontSize: "1rem",
-    lineHeight: 1.5,
-    color: "#212529",
-    backgroundColor: "#fff",
-    border: "1px solid #ccaacc",
-    borderRadius: ".25rem",
-  },
-};
+import cssModules from "./App.module.css";
 
 export default function App() {
   return (
-    <form style={styles.form}>
-      <div style={styles.formGroup}>
-        <label htmlFor="username" style={styles.formLabel}>
+    <form className={cssModules.form}>
+      <div className={cssModules.formGroup}>
+        <label htmlFor="username" className={cssModules.formLabel}>
           Username
         </label>
         <input
           type="text"
           id="username"
           placeholder="Input username"
-          style={styles.formInput}
+          className={cssModules.formInput}
+        />
+      </div>
+      <div className={cssModules.formGroup}>
+        <label htmlFor="password" className={cssModules.formLabel}>
+          Password
+        </label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Input password"
+          className={cssModules.formInput}
         />
       </div>
     </form>
