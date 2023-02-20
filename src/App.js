@@ -1,3 +1,5 @@
+const ListArray = ["Jokowi Dodo", "Puan Maharani", "Megawati", "Soekarno"];
+
 export default function App() {
   return (
     <>
@@ -7,6 +9,7 @@ export default function App() {
       <Props ListData="Lemberjember" ListName="Galardo" />
       <Props ListData="Toyota" ListName="Avanza Hitam" />
       <Props ListData="Ferdi" ListName="Sambo" />
+      <Props ListData="PDI-P" ListName={ListArray[0]} />
       <Props
         ListData="Puan"
         ListName="Maharani"
