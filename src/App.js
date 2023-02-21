@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
+import DetailUser from "./pages/DetailUser";
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
           <li>
             <Link to="/profile">Profile</Link>
           </li>
+          <li>
+            <Link to="/detailuser/1">Detail User</Link>
+          </li>
         </ul>
       </nav>
 
@@ -30,6 +34,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/detailuser/:id" element={<DetailUser />} />
       </Routes>
     </>
   );
