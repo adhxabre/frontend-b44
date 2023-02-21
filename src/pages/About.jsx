@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
+import DetailAbout from "../components/DetailAbout";
+
 export default function About() {
   const navigate = useNavigate();
 
@@ -16,6 +18,16 @@ export default function About() {
         <button onClick={handleNavigate}>Sign Up</button>
 
         <button onClick={() => navigate("/sign-up")}>Sign Up</button>
+
+        <br />
+        <br />
+        <br />
+
+        <DetailAbout
+          title=""
+          summary="No. 1 Penjual Pulau dan Provider"
+          total={1300}
+        />
       </div>
     </>
   );
