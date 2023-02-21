@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import ExampleForm from "./pages/ExampleForm";
 import CountState from "./pages/CountState";
 import CountVar from "./pages/CountVar";
+import EffectClass from "./pages/EffectClass";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Route path="/" element={<ExampleForm />} />
         <Route path="/countstate" element={<CountState />} />
         <Route path="/countvar" element={<CountVar />} />
+        <Route path="/effectclass" element={<EffectClass />} />
       </Routes>
     </>
   );
